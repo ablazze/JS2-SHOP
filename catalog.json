@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "product_name": "Mango People T-shirt",
+    "img": "product_1.jpg",
+    "price": 150
+  },
+  {
+    "id": 2,
+    "product_name": "Mango People Ruffle Blouse",
+    "img": "product_2.jpg",
+    "price": 100
+  },
+  {
+    "id": 3,
+    "product_name": "Mango People Winter Jacket",
+    "img": "product_3.jpg",
+    "price": 130
+  },
+  {
+    "id": 4,
+    "product_name": "Mango People Blouse",
+    "img": "product_4.jpg",
+    "price": 120
+  },
+  {
+    "id": 5,
+    "product_name": "Mango People Cross-Over Blouse",
+    "img": "product_5.jpg",
+    "price": 90
+  },
+  {
+    "id": 6,
+    "product_name": "Mango People Jacket",
+    "img": "product_6.jpg",
+    "price": 150
+  },
+  {
+    "id": 7,
+    "product_name": "Mango People Trousers",
+    "img": "product_7.jpg",
+    "price": 170
+  },
+  {
+    "id": 8,
+    "product_name": "Mango People Sweater",
+    "img": "product_8.jpg",
+    "price": 155
+  }
+]

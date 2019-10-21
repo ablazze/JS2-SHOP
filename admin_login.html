@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <form action="/admin/login" method="POST" @submit.prevent="handleSubmit">
+            <input type="password" name="password" placeholder="Пароль" v-model="password">
+            <input type="submit" value="Войти">
+        </form>
+    </div>
+    <script>
+
+        var app = new Vue({
+            el: "#root",
+            data: function() {
+                return {
+                    password: ""
+                };
+            },
+            methods: {
+                handleSubmit: function(evt) {
+                    var form = evt.target;
+                    console.log('form = ', form);
+                    axios.post(form.getAttribute("action"),{password: this.password}).then(response => {
+                        const data = response.data;
+                        console.log('data = ', data);
+                        if (data.result === 1) {
+                            location.href = "/admin";
+                        } else {
+                            alert(data.errors.join("\n"));
+                        }
+                    }).catch(err => {
+                        console.log('err = ', err);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack",
+    "build-watch": "webpack --watch"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Alena Porfoeva",
+  "license": "ISC",
+  "description": ""
+}
